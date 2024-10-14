@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Star } from 'lucide-react'
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '@/components/ui/carousel'
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 
 // Mock product data (replace with actual data fetching in a real application)
 const products = [
@@ -43,7 +43,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="space-y-4 m-auto">
+        <div className="space-y-4 mx-auto">
           <Carousel > {/* sin botones */}
             <CarouselContent>
               {product.images.map((image, index) => (
